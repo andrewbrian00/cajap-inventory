@@ -12,7 +12,7 @@ public class InventoryApplication {
 
 	public static void main(String[] args)  throws IOException {
 		SpringApplication.run(InventoryApplication.class, args);
-		Logger logger = Logger.getLogger("test");
+		Logger logger = Logger.getLogger("test test");
 //		logger(Level.INFO,"test");
 	}
 
