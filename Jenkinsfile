@@ -5,7 +5,7 @@ node {
   stage('SonarQube Analysis') {
     def mvn = tool 'apache-maven';
     withSonarQubeEnv() {
-      sh "mvn -v"
+      powershell "mvn -v"
 //        sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=cajap-inventory -Dsonar.projectName='cajap-inventory'"
     }
   }
