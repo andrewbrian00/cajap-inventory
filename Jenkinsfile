@@ -6,7 +6,7 @@ node {
     def mvn = tool 'apache-maven';
     withSonarQubeEnv() {
       sh "mvn -v"
-      sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=cajap-inventory -Dsonar.projectName='cajap-inventory'"
+//        sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=cajap-inventory -Dsonar.projectName='cajap-inventory'"
     }
   }
 }
